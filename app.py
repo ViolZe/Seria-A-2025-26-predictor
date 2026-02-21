@@ -13,7 +13,7 @@ st.markdown("Recency-weighted + fully normalized similarity model")
 # =====================================================
 @st.cache_data
 def load_data():
-    df = pd.read_excel("data\Complete Serie A Dataset Final.xlsx")
+    df = pd.read_excel("data/Complete Serie A Dataset Final.xlsx")
     numeric_cols = ["P", "WIN%", "GD PER GAME", "GA PER GAME"]
     df[numeric_cols] = df[numeric_cols].apply(pd.to_numeric)
     return df
